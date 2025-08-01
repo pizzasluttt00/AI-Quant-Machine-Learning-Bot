@@ -28,3 +28,6 @@ __pycache__/
 order_state.json
 orders/
 trade_log.txt
+
+unorganized/
+venv/
