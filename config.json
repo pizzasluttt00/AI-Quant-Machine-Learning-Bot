@@ -1,0 +1,27 @@
+{
+  "alpaca_api_key": "PK3U7XD08Y01VYQFUMP2",
+  "alpaca_secret_key": "t7C7Yy36zZIoUjaO2VYdFQ2kbRDOTZ9Y1lQPCxYI",
+  "alpaca_base_url": "https://paper-api.alpaca.markets",
+  "alpaca_data_url": "https://data.alpaca.markets/v2",
+  "telegram_bot_token": "YOUR_TELEGRAM_BOT_TOKEN_HERE",
+  "telegram_user_id": "YOUR_TELEGRAM_USER_ID_HERE",
+  "symbols": ["AAPL", "MSFT", "TSLA", "NVDA", "AMZN"],
+  "risk_per_trade": 0.01,
+  "capital": 5000,
+  "max_trades": 5,
+  "strategy": "quant_agent",
+  "sma_short": 10,
+  "sma_long": 30,
+  "entry_timeout_minutes": 60,
+  "allow_market_orders": false,
+  "enable_telegram_alerts": true,
+  "live_trading": false,
+  "auto_trade_thresholds": {
+    "min_signals": 3,
+    "market_order_min_signals": 7,
+    "require_undervaluation": true,
+    "cooldown_seconds": 3600,
+    "max_price_drift": 0.075,
+    "stale_order_days": 30
+  }
+}
