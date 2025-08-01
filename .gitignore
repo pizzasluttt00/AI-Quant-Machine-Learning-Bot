@@ -1,0 +1,9 @@
+*.log
+*.txt
+ai-trading-env/
+__pycache__/
+*.pyc
+*.pkl
+*.zip
+*.h5
+.DS_Store
