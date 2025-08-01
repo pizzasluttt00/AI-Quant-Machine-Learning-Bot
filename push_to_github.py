@@ -3,7 +3,7 @@
 # CONFIGURE THESE
 GITHUB_USERNAME="tacosluttt00"
 REPO_NAME="AI-Quant-Machine-Learning-Bot"
-REMOTE_URL="https://github.com:pizzasluttt00/AI-Quant-Machine-Learning-Bot"
+REMOTE_URL="https://github.com:pizzasluttt00/AI-Quant-Machine-Learning-Bot.git"
 
 # Use current folder or set your project path
 PROJECT_DIR="$(pwd)"
