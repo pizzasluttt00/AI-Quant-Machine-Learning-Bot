@@ -1,4 +1,4 @@
-*.log
+# Paste the rules above, then save with CTRL+O, ENTER, CTRL+X*.log
 *.txt
 ai-trading-env/
 __pycache__/
@@ -7,3 +7,24 @@ __pycache__/
 *.zip
 *.h5
 .DS_Store
+# Ignore virtual environments
+venv/
+ai-trading-env/
+
+# Ignore large data, system, and unorganized folders
+unorganized/
+lib/
+lib64/
+include/
+bin/
+share/
+
+# Ignore Python cache and logs
+__pycache__/
+*.log
+*.pyc
+
+# Ignore order tracking data
+order_state.json
+orders/
+trade_log.txt
