@@ -1,0 +1,18 @@
+#!/bin/bash
+echo "🛠️ Installing cron job for wishlist campaign automation..."
+
+SCRIPT_PATH="/home/pi/AI-trading/social_campaign/wishlist_bot_setup.py"
+LOG_PATH="/home/pi/AI-trading/social_campaign/wishlist_cron.log"
+
+# Escape any existing cron with same script
+crontab -l | grep -v "$SCRIPT_PATH" > tempcron || true
+
+# Add new cron entry: every 3 hours
+echo "0 */3 * * * python3 $SCRIPT_PATH >> $LOG_PATH 2>&1" >> tempcron
+
+# Install new crontab
+crontab tempcron
+rm tempcron
+
+echo "✅ Cron job added."
+echo "📋 Use 'crontab -l' to view it, or check $LOG_PATH for output."

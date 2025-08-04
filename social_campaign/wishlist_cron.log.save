@@ -1,0 +1,13 @@
+📣 Running wishlist bot at 2025-08-02 00:00:01
+[DRY RUN] Would post to Twitter: Experimental generosity: be the first to grant a stranger's college wish 🍺 https://www.amazon.com/registries/gl/guest-view/1PHHWF2FK0MDM?ref_=cm_sw_r_apann_ggr-subnav-share_JZ4F4P0TF2EZT7EEGQH1
+[DRY RUN] Would post to Reddit: Help me stock up for college 🎓🍹 Ch											lseck my wishlist: https://www.amazon.com/registries/gl/guest-view/1PHHWF2FK0MDM?ref_=cm_sw_r_apann_ggr-subnav-share_JZ4F4P0TF2EZT7EEGQH1
+[DRY RUN] Would post to Threads: Experimental generosity: be the first to grant a stranger's college wish 🍺 https://www.amazon.com/registries/gl/guest-view/1PHHWF2FK0MDM?ref_=cm_sw_r_apann_ggr-subnav-share_JZ4F4P0TF2EZT7EEGQH1
+[DRY RUN] Would post to Bluesky: Experimental generosity: be the first to grant a stranger's college wish 🍺 https://www.amazon.com/registries/gl/guest-view/1PHHWF2FK0MDM?ref_=cm_sw_r_apann_ggr-subnav-share_JZ4F4P0TF2EZT7EEGQH1
+[DRY RUN] Would post to Facebook: Not asking for much... just drinks for studying 🍻🧃 https://www.amazon.com/registries/gl/guest-view/1PHHWF2FK0MDM?ref_=cm_sw_r_apann_ggr-subnav-share_JZ4F4P0TF2EZT7EEGQH1
+📣 Running wishlist bot at 2025-08-02 03:00:01
+Traceback (most recent call last):
+  File "/home/pi/AI-trading/social_campaign/wishlist_bot_setup.py", line 42, in <module>
+    run_campaign()
+  File "/home/pi/AI-trading/social_campaign/wishlist_bot_setup.py", line 36, in run_campaign
+    for platform in platforms:
+NameError: name 'platforms' is not defined

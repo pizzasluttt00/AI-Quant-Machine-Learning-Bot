@@ -1,0 +1,42 @@
+from flask import Flask, jsonify, request
+import subprocess
+import os
+
+app = Flask(__name__)
+
+LOG_PATH = "/home/pi/AI-trading/logs/wishlist_campaign.log"
+SCRIPT_PATH = "/home/pi/AI-trading/social_campaign/wishlist_bot_setup.py"
+
+@app.route("/")
+def index():
+    return jsonify({
+        "status": "API is live",
+        "endpoints": ["/run", "/status"]
+    })
+
+@app.route("/run", methods=["POST"])
+def run_campaign():
+    try:
+        result = subprocess.run(["python3", SCRIPT_PATH], capture_output=True, text=True)
+        return jsonify({
+            "success": True,
+            "stdout": result.stdout,
+            "stderr": result.stderr
+        })
+    except Exception as e:
+        return jsonify({"success": False, "error": str(e)}), 500
+
+@app.route("/status", methods=["GET"])
+def check_log():
+    try:
+        if os.path.exists(LOG_PATH):
+            with open(LOG_PATH, "r") as f:
+                log = f.read().splitlines()[-10:]
+            return jsonify({"log_tail": log})
+        else:
+            return jsonify({"log_tail": "No log found"})
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5040, debug=False)

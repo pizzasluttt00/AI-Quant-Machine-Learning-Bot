@@ -1,6 +1,10 @@
 {
-  "alpaca_key": "PKYPWZJYWTKTB0YDPM1D",
-  "alpaca_secret": "YzHkCJsk8HHBIkcwjeL1UozuPzhe75UuDiQ3it2J",
-  "telegram_bot_token": "6592136400:AAGl9JX3Q9tI-QGbi1qK-CKf9GxOJidIVMI",
-  "telegram_user_id": "1107572806"
+  "alpaca_key": "6V8UyYr3cXTnPYY0lGJLxvd3sDa0J6sAXAU2xXEC",
+  "alpaca_secret": "PKQ0YK19VVLXIOH9HY6V",
+  "telegram_token": "6748112285:AAFu5upBqggUtXPA9n_5KSh_XZuBU47-8rk",
+  "telegram_chat_id": "1979554243",
+  "reddit_client_id": "8Q4ieFqquHazulJP1TSXrQ",
+  "reddit_client_secret":"ZzY_NNEw0F2GKny0_FJo9p9Uf8O36g",
+  "reddit_username": "Bulky_Basket_9224",
+  "reddit_password": "JELLYbabies3"
 }

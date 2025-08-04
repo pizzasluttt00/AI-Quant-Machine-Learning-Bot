@@ -1,0 +1,15 @@
+#!/bin/bash
+echo "🚀 Starting dry run of wishlist bot..."
+
+SCRIPT_PATH="/home/pi/AI-trading/social_campaign/wishlist_bot_setup.py"
+LOG_PATH="/home/pi/AI-trading/social_campaign/wishlist_cron_dryrun.log"
+
+# Show current time
+echo "🕒 Dry Run at $(date)" | tee -a "$LOG_PATH"
+
+# Run the script and capture output
+python3 "$SCRIPT_PATH" >> "$LOG_PATH" 2>&1
+
+# Tail the log to show last few lines of output
+echo "📄 Recent log output:"
+tail -n 10 "$LOG_PATH"
